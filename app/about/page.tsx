@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Github, MapPin, MessageCircle } from "lucide-react";
 import { profile, skills } from "@/lib/content";
+import Image from "next/image";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -37,7 +38,14 @@ export default function AboutPage() {
           <div className="portrait-card portrait-card--back">FLUTTER</div>
           <div className="portrait-card portrait-card--middle">MOBILE</div>
           <div className="portrait-card portrait-card--front">
-            <span className="portrait-initials">AS</span>
+            <Image
+              src="/images/Abhishek.jpg"
+              alt="Abhishek Sharma"
+              width={112}
+              height={112}
+              className="portrait-photo"
+              priority
+            />
             <strong>{profile.name}</strong>
             <small>{profile.role}</small>
           </div>
