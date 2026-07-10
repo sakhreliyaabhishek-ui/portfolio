@@ -38,14 +38,16 @@ export default function AboutPage() {
           <div className="portrait-card portrait-card--back">FLUTTER</div>
           <div className="portrait-card portrait-card--middle">MOBILE</div>
           <div className="portrait-card portrait-card--front">
-            <Image
-              src="/images/Abhishek.jpg"
-              alt="Abhishek Sharma"
-              width={112}
-              height={112}
-              className="portrait-photo"
-              priority
-            />
+            <span className="portrait-initials">
+              <Image
+                src="/images/Abhishek.jpg"
+                alt="Abhishek Sakhreliya"
+                width={112}
+                height={112}
+                className="portrait-photo"
+                priority
+              />
+            </span>
             <strong>{profile.name}</strong>
             <small>{profile.role}</small>
           </div>
