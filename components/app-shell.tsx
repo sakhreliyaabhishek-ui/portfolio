@@ -46,8 +46,8 @@ type IntroSequenceRuntime = {
   started: boolean;
   step: IntroStep;
   greeting: string;
-  helloTimer: ReturnType<typeof setTimeout> | null;
-  endTimer: ReturnType<typeof setTimeout> | null;
+  helloTimer: number | null;
+  endTimer: number | null;
 };
 
 const introRuntime: IntroSequenceRuntime = {
