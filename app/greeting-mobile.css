@@ -1,0 +1,25 @@
+/* Mobile greeting: reuse desktop floating-header pill during intro */
+@media (max-width: 767px) {
+  .app-shell.is-header-intro .mobile-nav-trigger {
+    display: none;
+  }
+
+  .app-shell.is-header-intro .floating-header-anchor {
+    display: flex !important;
+    justify-content: center;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100vw - 32px);
+    pointer-events: none;
+  }
+
+  .app-shell.is-header-intro .floating-header {
+    pointer-events: auto;
+  }
+
+  .app-shell:not(.is-header-intro) .floating-header-anchor {
+    display: none !important;
+  }
+}

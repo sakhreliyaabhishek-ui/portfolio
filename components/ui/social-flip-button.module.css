@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  display: block;
+  perspective: 1200px;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.6rem;
+  backface-visibility: hidden;
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.front {
+  background:
+    radial-gradient(circle at 16% 0%, rgba(255, 138, 61, 0.16), transparent 26%),
+    radial-gradient(circle at 85% 0%, rgba(95, 150, 255, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.back {
+  transform: rotateX(180deg);
+  background:
+    radial-gradient(circle at 85% 100%, rgba(255, 138, 61, 0.18), transparent 34%),
+    radial-gradient(circle at 18% 0%, rgba(95, 150, 255, 0.2), transparent 30%),
+    linear-gradient(180deg, rgba(17, 31, 54, 0.92), rgba(10, 19, 35, 0.94));
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .face {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (hover: hover) {
+  .card:hover .front,
+  .card:focus-visible .front {
+    transform: rotateX(-180deg);
+    border-color: rgba(255, 138, 61, 0.22);
+  }
+
+  .card:hover .back,
+  .card:focus-visible .back {
+    transform: rotateX(0deg);
+    border-color: rgba(95, 150, 255, 0.2);
+  }
+}

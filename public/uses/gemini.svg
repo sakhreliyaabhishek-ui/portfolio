@@ -1,0 +1,27 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64 8C68.02 35.06 92.94 59.98 120 64C92.94 68.02 68.02 92.94 64 120C59.98 92.94 35.06 68.02 8 64C35.06 59.98 59.98 35.06 64 8Z" fill="url(#gemini-main)"/>
+  <path d="M64 23C66.9 43.08 84.92 61.1 105 64C84.92 66.9 66.9 84.92 64 105C61.1 84.92 43.08 66.9 23 64C43.08 61.1 61.1 43.08 64 23Z" fill="url(#gemini-core)" opacity="0.96"/>
+  <path d="M63.5 21C67.02 42.7 84.8 60.53 106.5 64" stroke="url(#gemini-highlight)" stroke-width="5" stroke-linecap="round" opacity="0.88"/>
+  <path d="M22 64C43.2 67.38 60.62 84.8 64 106" stroke="url(#gemini-shadow)" stroke-width="5" stroke-linecap="round" opacity="0.58"/>
+  <defs>
+    <linearGradient id="gemini-main" x1="18" y1="21" x2="107" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4285F4"/>
+      <stop offset="0.34" stop-color="#6A8DFF"/>
+      <stop offset="0.66" stop-color="#A142F4"/>
+      <stop offset="1" stop-color="#EA4335"/>
+    </linearGradient>
+    <linearGradient id="gemini-core" x1="34" y1="32" x2="96" y2="97" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AB4F8"/>
+      <stop offset="0.48" stop-color="#C58AF9"/>
+      <stop offset="1" stop-color="#F6AEA9"/>
+    </linearGradient>
+    <linearGradient id="gemini-highlight" x1="67" y1="24" x2="102" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F0FE"/>
+      <stop offset="1" stop-color="#FAD2CF" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gemini-shadow" x1="23" y1="65" x2="63" y2="105" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4285F4" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#A142F4"/>
+    </linearGradient>
+  </defs>
+</svg>
